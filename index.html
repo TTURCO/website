@@ -17,7 +17,33 @@
   </head>
   <body id="haut">
 
-    <!-- HEADER WITH BACKGROUND VIDEO (Limited to first 10 seconds) -->
+    <!-- TOP NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand font-weight-bold" href="#haut">Théophile Turco</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#news">Publications-Communications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#collaborators">Collaborators and Interns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER WITH COMPACT BACKGROUND VIDEO (First 10 seconds loop) -->
     <header class="video-header">
       <video id="bgVideo" autoplay muted playsinline class="bg-video">
         <source src="Video/VID-CoastNet_Tagus.mp4" type="video/mp4">
@@ -30,7 +56,7 @@
       <!-- Header Content -->
       <div class="container text-center text-white header-content">
         <p class="welcome-sub text-uppercase">Welcome to my website</p>
-        <h1 class="display-3 font-weight-bold">Théophile Turco</h1>
+        <h1 class="display-4 font-weight-bold">Théophile Turco</h1>
         <p class="lead font-weight-light">Postdoctoral researcher in ecology & bioacoustics</p>
       </div>
     </header>
@@ -47,47 +73,82 @@
       </div>
     </section>
 
-    <!-- NEWS SECTION - ANIMAL BEHAVIOUR PUBLICATION -->
+    <!-- NEWS SECTION -->
     <section class="container my-5" id="news">
       <div class="text-center mb-5">
-        <h2 class="section-title">News</h2>
-        <p class="text-muted">Discover our latest updates and publications</p>
+        <h2 class="section-title">News & Publications</h2>
+        <p class="text-muted">Discover our latest updates, research papers, and event hosting</p>
       </div>
 
-      <div class="row justify-content-center">
-        <!-- News Card: Animal Behaviour Publication -->
-        <div class="col-md-8 col-lg-6 mb-4">
+      <div class="row">
+        <!-- News Card 1: Animal Behaviour Publication -->
+        <div class="col-lg-6 mb-4">
           <div class="card h-100 shadow-sm border-0 news-card">
-            <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="Animal Behaviour Publication">
-            <div class="card-body">
-              <span class="badge badge-primary mb-2">New Publication</span>
-              <h4 class="card-title font-weight-bold">Latest Publication in Animal Behaviour</h4>
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-primary mb-2 align-self-start">Journal Publication</span>
+              <h4 class="card-title font-weight-bold">Animal Behaviour Paper Published</h4>
               <p class="card-text text-muted">
-                Our new study investigating behavioral responses and acoustic communication in aquatic species has just been officially published in the <strong>Animal Behaviour</strong> journal. Read more about how noise impacts individual and collective animal dynamics.
+                Our new research article <em>"Beyond the glass: testing visitor effects on the behavior of teleost fish in public aquaria"</em> has been officially accepted and published in <strong>Animal Behaviour</strong>[cite: 8]. We explore how visitor density and percussive noise impact multi-species fish welfare[cite: 8, 12].
               </p>
-              <a href="#" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Read Full Paper</a>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-auto align-self-start" target="_blank">Read Paper</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Card 2: AEET-SFE2-EEF Meeting 2027 -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm border-0 news-card">
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-success mb-2 align-self-start">Upcoming Event</span>
+              <h4 class="card-title font-weight-bold">AEET-SFE2-EEF Meeting 2027 Session</h4>
+              <p class="card-text text-muted">
+                Join us at the <a href="https://aeet-sfe2-eef-meeting2027.org/" target="_blank">AEET-SFE2-EEF Meeting 2027</a> where I am proudly hosting the session: <em>« From bioacoustics to ecoacoustics for biodiversity monitoring and conservation »</em> alongside esteemed colleagues.
+              </p>
+              <a href="https://aeet-sfe2-eef-meeting2027.org/" class="btn btn-outline-success btn-sm mt-auto align-self-start" target="_blank">Conference Details</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- LOGO / PARTNERS FOOTER ROW (Using your exact repository images) -->
-    <section class="py-5 bg-light border-top mt-5">
+    <!-- COLLABORATORS & PARTNERS LOGOS (Full Color) -->
+    <section class="py-5 bg-light border-top mt-5" id="collaborators">
       <div class="container">
+        <div class="text-center mb-4">
+          <h3 class="font-weight-bold">Collaborators & Institutions</h3>
+        </div>
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-6 col-md-3 my-3">
-            <img src="Image/Logo_ENES.png" alt="ENES Logo" class="img-fluid grayscale-logo" style="max-height: 50px;">
+            <img src="Image/Logo_ENES.png" alt="ENES Logo" class="img-fluid color-logo">
           </div>
           <div class="col-6 col-md-3 my-3">
-            <img src="Image/FBL.png" alt="FBL Logo" class="img-fluid grayscale-logo" style="max-height: 50px;">
+            <img src="Image/FBL.png" alt="FBL Logo" class="img-fluid color-logo">
           </div>
           <div class="col-6 col-md-3 my-3">
-            <img src="Image/MARE LOGO.png" alt="MARE Logo" class="img-fluid grayscale-logo" style="max-height: 50px;">
+            <img src="Image/MARE LOGO.png" alt="MARE Logo" class="img-fluid color-logo">
           </div>
           <div class="col-6 col-md-3 my-3">
-            <img src="Image/UJM-LOGO-NOIR.png" alt="UJM Logo" class="img-fluid grayscale-logo" style="max-height: 50px;">
+            <img src="Image/UJM-LOGO-NOIR.png" alt="UJM Logo" class="img-fluid color-logo">
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION PLACEHOLDER -->
+    <section class="container my-5" id="gallery">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Gallery</h2>
+        <p class="text-muted">Fieldwork, lab experiments, and research highlights</p>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/350x250" alt="Gallery 1" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/350x250" alt="Gallery 2" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/350x250" alt="Gallery 3" class="img-fluid rounded shadow-sm">
         </div>
       </div>
     </section>
