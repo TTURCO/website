@@ -111,3 +111,10 @@ footer {
   background: rgb(30, 30, 30);
   color: lightgray;
 }
+
+/* Fixed Gobie Logo Sizing in Navbar */
+.nav-logo {
+  max-height: 30px !important;
+  width: auto;
+  object-fit: contain;
+}
