@@ -1,33 +1,29 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="description" content="Bienvenue sur le site de Théophile Turco">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style3.css">
-    <link rel="shortcut icon" href="Image/LogoTop.png">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Image/gobie_draw.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
     <title>Théophile Turco PhD</title>
   </head>
   <body id="haut">
 
-    <!-- TOP NAVIGATION BAR (Name removed from top-left) -->
+    <!-- TOP NAVIGATION BAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand font-weight-bold" href="#haut"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand font-weight-bold d-flex align-items-center" href="index.html">
+          <img src="Image/gobie_draw.png" alt="Logo" style="height: 35px;" class="mr-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#news">Publications-Communications</a>
+              <a class="nav-link" href="publications.html">Publications-Communications</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#collaborators">Collaborators and Interns</a>
@@ -40,17 +36,13 @@
       </div>
     </nav>
 
-    <!-- HEADER WITH COMPACT BACKGROUND VIDEO (First 10 seconds loop) -->
+    <!-- HEADER WITH COMPACT BACKGROUND VIDEO -->
     <header class="video-header">
       <video id="bgVideo" autoplay muted playsinline class="bg-video">
         <source src="Video/VID-CoastNet_Tagus.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
-      
-      <!-- Dark Overlay -->
       <div class="video-overlay"></div>
-
-      <!-- Header Content -->
       <div class="container text-center text-white header-content">
         <p class="welcome-sub text-uppercase">Welcome to my website</p>
         <h1 class="display-4 font-weight-bold">Théophile Turco</h1>
@@ -58,7 +50,7 @@
       </div>
     </header>
 
-    <!-- GENERIC DESCRIPTION / ABOUT ME -->
+    <!-- ABOUT ME -->
     <section class="container my-5 py-4">
       <div class="row justify-content-center">
         <div class="col-lg-9 text-center">
@@ -73,8 +65,8 @@
     <!-- NEWS SECTION -->
     <section class="container my-5" id="news">
       <div class="text-center mb-5">
-        <h2 class="section-title">News & Publications</h2>
-        <p class="text-muted">Discover our latest updates, research papers, and event hosting</p>
+        <h2 class="section-title">Latest News</h2>
+        <p class="text-muted">Discover our latest updates and research highlights</p>
       </div>
 
       <div class="row">
@@ -85,15 +77,12 @@
               <span class="badge badge-warning mb-2 align-self-start text-dark">Submitted Paper</span>
               <h4 class="card-title font-weight-bold">Submitted to Animal Behaviour</h4>
               <p class="card-text text-muted">
-                Our manuscript <em>"Beyond the glass: testing visitor effects on the behavior of teleost fish in public aquaria"</em> has been submitted to <strong>Animal Behaviour</strong>[cite: 8, 9]. 
-              </p>
-              <p class="card-text text-muted small mb-3">
-                <strong>Abstract summary:</strong> Zoos and public aquariums serve as essential hubs for wildlife conservation, public education, and scientific research; however, the success of these missions depends upon maintaining high animal welfare standards despite constant human presence[cite: 8]. A primary concern is the 'visitor effect': the modification of animal behavior due to human presence[cite: 8]. This study investigates the behavioral responses of 13 teleost species to varying levels of visitor density, direct human solicitations, and ambient noise[cite: 8].
+                Our manuscript <em>"Beyond the glass: testing visitor effects on the behavior of teleost fish in public aquaria"</em> has been submitted to <strong>Animal Behaviour</strong>. 
               </p>
               <p class="card-text small mb-3">
-                <strong>Preprint available:</strong> You can read the available preprint version on bioRxiv at <a href="https://doi.org/10.64898/2026.09.17.752300" target="_blank">https://doi.org/10.64898/2026.09.17.752300</a>[cite: 9].
+                <strong>Preprint available:</strong> Read the preprint version on bioRxiv at <a href="https://doi.org/10.64898/2026.09.17.752300" target="_blank">https://doi.org/10.64898/2026.09.17.752300</a>.
               </p>
-              <a href="https://doi.org/10.64898/2026.09.17.752300" class="btn btn-outline-primary btn-sm mt-auto align-self-start" target="_blank">View Preprint</a>
+              <a href="publications.html" class="btn btn-outline-primary btn-sm mt-auto align-self-start">View All Publications</a>
             </div>
           </div>
         </div>
@@ -105,16 +94,16 @@
               <span class="badge badge-success mb-2 align-self-start">Upcoming Event</span>
               <h4 class="card-title font-weight-bold">AEET-SFE2-EEF Meeting 2027 Session</h4>
               <p class="card-text text-muted">
-                Join us at the <a href="https://aeet-sfe2-eef-meeting2027.org/" target="_blank">AEET-SFE2-EEF Meeting 2027</a> where I am proudly hosting the session: <em>« From bioacoustics to ecoacoustics for biodiversity monitoring and conservation »</em> alongside esteemed colleagues.
+                Proudly hosting the session: <em>« From bioacoustics to ecoacoustics for biodiversity monitoring and conservation »</em> at the upcoming congress in Zaragoza, Spain (September 20-24, 2027).
               </p>
-              <a href="https://aeet-sfe2-eef-meeting2027.org/" class="btn btn-outline-success btn-sm mt-auto align-self-start" target="_blank">Conference Details</a>
+              <a href="publications.html" class="btn btn-outline-success btn-sm mt-auto align-self-start">Session Details</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- COLLABORATORS & PARTNERS LOGOS (Full Color) -->
+    <!-- COLLABORATORS & PARTNERS LOGOS -->
     <section class="py-5 bg-light border-top mt-5" id="collaborators">
       <div class="container">
         <div class="text-center mb-4">
@@ -142,7 +131,6 @@
       <p class="mb-0">Copyright © Théophile Turco All Right Reserved</p>
     </footer>
 
-    <!-- JavaScript to limit video to the first 10 seconds -->
     <script>
       const video = document.getElementById('bgVideo');
       video.addEventListener('timeupdate', function() {
@@ -153,9 +141,8 @@
       });
     </script>
 
-    <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   </body>
 </html>
