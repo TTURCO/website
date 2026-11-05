@@ -2,13 +2,28 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #333;
   background-color: #fdfdfd;
+  padding-top: 56px; /* Space for fixed navbar */
 }
 
-/* Video Header Styles */
+/* Navbar styling */
+.navbar {
+  font-weight: 600;
+}
+.navbar-nav .nav-link {
+  color: #495057 !important;
+  transition: color 0.2s ease;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+.navbar-nav .nav-link:hover {
+  color: #007bff !important;
+}
+
+/* Compact Video Header Styles (Reduced height proportion) */
 .video-header {
   position: relative;
-  height: 65vh;
-  min-height: 450px;
+  height: 45vh;
+  min-height: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +49,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 25, 47, 0.55); /* Elegant dark blue translucent filter */
+  background: rgba(10, 25, 47, 0.6); /* Translucent dark navy filter */
   z-index: -1;
 }
 
@@ -43,10 +58,10 @@ body {
 }
 
 .welcome-sub {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 3px;
-  color: #e2e8f0;
-  margin-bottom: 12px;
+  color: #cbd5e1;
+  margin-bottom: 8px;
 }
 
 /* Section Headings */
@@ -72,25 +87,23 @@ body {
 /* News Cards Hover Effect */
 .news-card {
   transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
 .news-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.12) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
 }
 
-/* Partner Logos */
-.grayscale-logo {
-  filter: grayscale(100%);
-  opacity: 0.6;
-  transition: filter 0.2s ease, opacity 0.2s ease;
+/* Full Color Partner Logos */
+.color-logo {
+  max-height: 55px;
+  transition: transform 0.2s ease;
 }
 
-.grayscale-logo:hover {
-  filter: grayscale(0%);
-  opacity: 1;
+.color-logo:hover {
+  transform: scale(1.08);
 }
 
 /* Footer */
