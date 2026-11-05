@@ -1,3 +1,10 @@
+/* Perfect Navigation Bar Logo Sizing */
+.nav-logo {
+  height: 28px !important;
+  width: auto !important;
+  object-fit: contain;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
