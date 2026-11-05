@@ -5,7 +5,7 @@
     <meta name="description" content="Contact - Théophile Turco">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style3.css">
-    <link rel="shortcut icon" href="Image/LogoTop.png">
+    <link rel="shortcut icon" href="Image/gobie_draw.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <title>Contact - Théophile Turco</title>
   </head>
@@ -14,11 +14,16 @@
     <!-- TOP NAVIGATION BAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand font-weight-bold" href="index.html">← Back to Home</a>
+        <a class="navbar-brand font-weight-bold d-flex align-items-center" href="index.html">
+          <img src="Image/gobie_draw.png" alt="Logo" style="height: 35px;" class="mr-2"> Home
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html#news">Publications-Communications</a>
+              <a class="nav-link" href="publications.html">Publications-Communications</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html#collaborators">Collaborators and Interns</a>
@@ -40,23 +45,20 @@
             Feel free to reach out for research collaborations, inquiries, or academic exchanges.
           </p>
           <p class="h5 mb-3">
-            <strong>Email:</strong> <a href="mailto:theophile.turco@univ-st-etienne.fr">theophile.turco@univ-st-etienne.fr</a>[cite: 9, 10]
+            <strong>Email:</strong> <a href="mailto:theophile.turco@univ-st-etienne.fr">theophile.turco@univ-st-etienne.fr</a>
           </p>
           <p class="text-muted mb-4">
-            Université Jean Monnet Saint-Étienne / MARE - Marine and Environmental Sciences Centre[cite: 9, 10]
+            Université Jean Monnet Saint-Étienne / MARE - Marine and Environmental Sciences Centre
           </p>
 
           <!-- ACADEMIC PROFILES & LOGOS -->
           <div class="d-flex justify-content-center align-items-center flex-wrap mt-4">
-            <!-- ResearchGate Link -->
             <a href="https://www.researchgate.net/profile/Theophile-Turco?ev=hdr_xprf" target="_blank" class="btn btn-outline-dark mx-2 my-2 px-4 py-2 font-weight-bold">
               ResearchGate Profile
             </a>
-
-            <!-- ORCID Link with Official Logo -->
             <a href="https://orcid.org/0000-0003-1189-0013" target="_blank" class="btn btn-outline-success mx-2 my-2 px-3 py-2 d-inline-flex align-items-center">
               <img src="https://orcid.org/assets/vectors/orcid.logo.icon.svg" alt="ORCID logo" width="20" height="20" class="mr-2">
-              ORCID: 0000-0003-1189-0013[cite: 10]
+              ORCID: 0000-0003-1189-0013
             </a>
           </div>
 
@@ -69,5 +71,8 @@
       <p class="mb-0">Copyright © Théophile Turco All Right Reserved</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   </body>
 </html>
