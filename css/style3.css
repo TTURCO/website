@@ -1,13 +1,14 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
+  background-color: #fdfdfd;
 }
 
 /* Video Header Styles */
 .video-header {
   position: relative;
-  height: 60vh;
-  min-height: 400px;
+  height: 65vh;
+  min-height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +34,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 25, 47, 0.65); /* Deep blue overlay for contrast */
+  background: rgba(10, 25, 47, 0.55); /* Elegant dark blue translucent filter */
   z-index: -1;
 }
 
@@ -42,10 +43,10 @@ body {
 }
 
 .welcome-sub {
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  color: #adb5bd;
-  margin-bottom: 10px;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  color: #e2e8f0;
+  margin-bottom: 12px;
 }
 
 /* Section Headings */
@@ -60,7 +61,7 @@ body {
   content: '';
   position: absolute;
   display: block;
-  width: 50px;
+  width: 40px;
   height: 3px;
   background: #007bff;
   bottom: 0;
@@ -70,18 +71,20 @@ body {
 
 /* News Cards Hover Effect */
 .news-card {
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .news-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12) !important;
 }
 
 /* Partner Logos */
 .grayscale-logo {
   filter: grayscale(100%);
-  opacity: 0.7;
+  opacity: 0.6;
   transition: filter 0.2s ease, opacity 0.2s ease;
 }
 
