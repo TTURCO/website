@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Updated CSS path to match your 'css' folder -->
     <link rel="stylesheet" type="text/css" href="css/style3.css">
     <link rel="shortcut icon" href="Image/LogoTop.png">
 
@@ -18,15 +17,14 @@
   </head>
   <body id="haut">
 
-    <!-- HEADER WITH BACKGROUND VIDEO -->
+    <!-- HEADER WITH BACKGROUND VIDEO (Limited to first 10 seconds) -->
     <header class="video-header">
-      <!-- Video Element looping below the name banner -->
-      <video autoplay muted loop playsinline class="bg-video">
+      <video id="bgVideo" autoplay muted playsinline class="bg-video">
         <source src="Video/VID-CoastNet_Tagus.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
       
-      <!-- Dark Overlay to make text readable -->
+      <!-- Dark Overlay -->
       <div class="video-overlay"></div>
 
       <!-- Header Content -->
@@ -49,79 +47,46 @@
       </div>
     </section>
 
-    <!-- NEWS SECTION WITH IMAGES -->
+    <!-- NEWS SECTION - ANIMAL BEHAVIOUR PUBLICATION -->
     <section class="container my-5" id="news">
       <div class="text-center mb-5">
         <h2 class="section-title">News</h2>
         <p class="text-muted">Discover our latest updates and publications</p>
       </div>
 
-      <div class="row">
-        <!-- News Card 1 -->
-        <div class="col-md-6 col-lg-3 mb-4">
+      <div class="row justify-content-center">
+        <!-- News Card: Animal Behaviour Publication -->
+        <div class="col-md-8 col-lg-6 mb-4">
           <div class="card h-100 shadow-sm border-0 news-card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="News 1">
+            <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="Animal Behaviour Publication">
             <div class="card-body">
-              <h5 class="card-title font-weight-bold">New Wildlife Publication</h5>
-              <p class="card-text text-muted small">New study highlighting noise pollution impacts on aquatic wildlife environments...</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- News Card 2 -->
-        <div class="col-md-6 col-lg-3 mb-4">
-          <div class="card h-100 shadow-sm border-0 news-card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="News 2">
-            <div class="card-body">
-              <h5 class="card-title font-weight-bold">Acoustic Profiling</h5>
-              <p class="card-text text-muted small">Exploring acoustic profiling methods across aquatic estuaries and coastal habitats...</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- News Card 3 -->
-        <div class="col-md-6 col-lg-3 mb-4">
-          <div class="card h-100 shadow-sm border-0 news-card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="News 3">
-            <div class="card-body">
-              <h5 class="card-title font-weight-bold">Research Seminar</h5>
-              <p class="card-text text-muted small">Presenting recent bioacoustic findings at the upcoming annual ecological conference...</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- News Card 4 -->
-        <div class="col-md-6 col-lg-3 mb-4">
-          <div class="card h-100 shadow-sm border-0 news-card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="News 4">
-            <div class="card-body">
-              <h5 class="card-title font-weight-bold">Lab Update</h5>
-              <p class="card-text text-muted small">New equipment deployed for long-term passive acoustic monitoring projects...</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+              <span class="badge badge-primary mb-2">New Publication</span>
+              <h4 class="card-title font-weight-bold">Latest Publication in Animal Behaviour</h4>
+              <p class="card-text text-muted">
+                Our new study investigating behavioral responses and acoustic communication in aquatic species has just been officially published in the <strong>Animal Behaviour</strong> journal. Read more about how noise impacts individual and collective animal dynamics.
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Read Full Paper</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- LOGO / PARTNERS FOOTER ROW -->
+    <!-- LOGO / PARTNERS FOOTER ROW (Using your exact repository images) -->
     <section class="py-5 bg-light border-top mt-5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
-          <div class="col-4 col-md-2 my-2">
-            <img src="Image/quote.png" alt="Partner Logo" class="img-fluid grayscale-logo" style="max-height: 45px;">
+          <div class="col-6 col-md-3 my-3">
+            <img src="Image/Logo_ENES.png" alt="ENES Logo" class="img-fluid grayscale-logo" style="max-height: 50px;">
           </div>
-          <div class="col-4 col-md-2 my-2">
-            <img src="Image/quote.png" alt="Partner Logo" class="img-fluid grayscale-logo" style="max-height: 45px;">
+          <div class="col-6 col-md-3 my-3">
+            <img src="Image/FBL.png" alt="FBL Logo" class="img-fluid grayscale-logo" style="max-height: 50px;">
           </div>
-          <div class="col-4 col-md-2 my-2">
-            <img src="Image/quote.png" alt="Partner Logo" class="img-fluid grayscale-logo" style="max-height: 45px;">
+          <div class="col-6 col-md-3 my-3">
+            <img src="Image/MARE LOGO.png" alt="MARE Logo" class="img-fluid grayscale-logo" style="max-height: 50px;">
           </div>
-          <div class="col-4 col-md-2 my-2">
-            <img src="Image/quote.png" alt="Partner Logo" class="img-fluid grayscale-logo" style="max-height: 45px;">
+          <div class="col-6 col-md-3 my-3">
+            <img src="Image/UJM-LOGO-NOIR.png" alt="UJM Logo" class="img-fluid grayscale-logo" style="max-height: 50px;">
           </div>
         </div>
       </div>
@@ -131,6 +96,17 @@
     <footer class="text-center py-4 bg-dark text-light">
       <p class="mb-0">Copyright © Théophile Turco All Right Reserved</p>
     </footer>
+
+    <!-- JavaScript to limit video to the first 10 seconds -->
+    <script>
+      const video = document.getElementById('bgVideo');
+      video.addEventListener('timeupdate', function() {
+        if (video.currentTime >= 10) {
+          video.currentTime = 0;
+          video.play();
+        }
+      });
+    </script>
 
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
