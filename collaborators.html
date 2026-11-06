@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <!-- Leaflet CSS for Map -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/style3.css">
     <link rel="shortcut icon" href="Image/gobie_draw.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
@@ -49,15 +51,29 @@
             A heartfelt thank you to all the brilliant researchers, colleagues, and students who contribute to our projects in bioacoustics, aquatic ecology, and behavioral biology.
           </p>
 
-          <!-- INTERACTIVE MAP SECTION -->
+          <!-- INTERACTIVE MAP SECTION WITH LEGEND -->
           <div class="card shadow-sm border-0 mb-5 p-3">
-            <h3 class="h5 font-weight-bold text-dark mb-3 text-center">🌍 Collaborators Geographical Locations</h3>
-            <div id="collaborators-map" style="height: 420px; border-radius: 6px;"></div>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
+              <h3 class="h5 font-weight-bold text-dark mb-2 mb-md-0"><i class="fas fa-globe-americas text-primary mr-2"></i>Collaborators Geographical Locations</h3>
+              <div class="badge-legend">
+                <span class="badge badge-primary px-3 py-2 mr-2"><i class="fas fa-map-marker-alt mr-1"></i> Current Collaborator</span>
+                <span class="badge badge-secondary px-3 py-2"><i class="fas fa-map-marker-alt mr-1"></i> Past Collaborator</span>
+              </div>
+            </div>
+            <div id="collaborators-map" style="height: 440px; border-radius: 6px;"></div>
           </div>
 
-          <!-- ================= FRANCE ================= -->
-          <div class="mb-5">
-            <h3 class="h4 font-weight-bold text-primary border-bottom pb-2 mb-4">🇫🇷 France</h3>
+          <!-- ================= PRESENT COLLABORATORS ================= -->
+          <div class="mb-4">
+            <div class="d-flex align-items-center mb-4">
+              <h3 class="h3 font-weight-bold text-dark mb-0">Current Collaborators</h3>
+              <span class="badge badge-primary ml-3 px-3 py-2">Present</span>
+            </div>
+          </div>
+
+          <!-- FRANCE -->
+          <div class="mb-5 pl-md-3">
+            <h4 class="h4 font-weight-bold text-primary border-bottom pb-2 mb-4">🇫🇷 France</h4>
 
             <!-- Sub-panel: Saint-Étienne -->
             <h5 class="text-secondary font-weight-bold mt-4 mb-3">Université Jean Monnet Saint-Étienne (ENES Lab)</h5>
@@ -178,14 +194,12 @@
                 </div>
               </div>
             </div>
-
           </div>
 
-          <!-- ================= PORTUGAL ================= -->
-          <div class="mb-5">
-            <h3 class="h4 font-weight-bold text-success border-bottom pb-2 mb-4">🇵🇹 Portugal (MARE / ARNET - Lisbon)</h3>
+          <!-- PORTUGAL -->
+          <div class="mb-5 pl-md-3">
+            <h4 class="h4 font-weight-bold text-success border-bottom pb-2 mb-4">🇵🇹 Portugal (MARE / ARNET - Lisbon)</h4>
             <div class="row">
-              
               <!-- Collab: Manuel Vieira -->
               <div class="col-md-6 mb-4">
                 <div class="card h-100 shadow-sm border-0 p-3 d-flex flex-row align-items-center">
@@ -211,15 +225,13 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
 
-          <!-- ================= CZECH REPUBLIC ================= -->
-          <div class="mb-5">
-            <h3 class="h4 font-weight-bold text-warning border-bottom pb-2 mb-4">🇨🇿 Czech Republic (Brno)</h3>
+          <!-- CZECH REPUBLIC -->
+          <div class="mb-5 pl-md-3">
+            <h4 class="h4 font-weight-bold text-warning border-bottom pb-2 mb-4">🇨🇿 Czech Republic (Brno)</h4>
             <div class="row">
-              
               <!-- Collab: Radim Blažek -->
               <div class="col-md-6 mb-4">
                 <div class="card h-100 shadow-sm border-0 p-3 d-flex flex-row align-items-center">
@@ -232,15 +244,13 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
 
-          <!-- ================= NORWAY ================= -->
-          <div class="mb-5">
-            <h3 class="h4 font-weight-bold text-danger border-bottom pb-2 mb-4">🇳🇴 Norway (NTNU - Trondheim)</h3>
+          <!-- NORWAY -->
+          <div class="mb-5 pl-md-3">
+            <h4 class="h4 font-weight-bold text-danger border-bottom pb-2 mb-4">🇳🇴 Norway (NTNU - Trondheim)</h4>
             <div class="row">
-              
               <!-- Collab: Émilie Rojas -->
               <div class="col-md-6 mb-4">
                 <div class="card h-100 shadow-sm border-0 p-3 d-flex flex-row align-items-center">
@@ -250,6 +260,51 @@
                     <p class="text-muted small mb-1">Postdoctoral Researcher</p>
                     <p class="text-secondary small mb-2">NTNU Trondheim</p>
                     <a href="https://www.emilierojas.fr/" target="_blank" class="btn btn-outline-danger btn-sm">Personal Website</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= PAST COLLABORATORS ================= -->
+          <div class="mt-5 mb-4">
+            <div class="d-flex align-items-center mb-4">
+              <h3 class="h3 font-weight-bold text-secondary mb-0">Past Collaborators</h3>
+              <span class="badge badge-secondary ml-3 px-3 py-2">Past</span>
+            </div>
+          </div>
+
+          <div class="mb-5 pl-md-3">
+            <div class="row">
+
+              <!-- Past Collab: Dennis M. Higgs (Canada) -->
+              <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-0 p-3 d-flex flex-row align-items-center bg-light">
+                  <img src="Image/placeholder_higgs.jpg" alt="Dennis M. Higgs" class="rounded-circle mr-3 opacity-75" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #6c757d;">
+                  <div class="w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <h5 class="font-weight-bold mb-1 text-dark">Prof. Dennis M. Higgs</h5>
+                      <span class="badge badge-secondary small">🇨🇦 Canada</span>
+                    </div>
+                    <p class="text-muted small mb-1">Professor in Bioacoustics</p>
+                    <p class="text-secondary small mb-2">University of Windsor</p>
+                    <a href="https://www.researchgate.net/profile/Dennis-Higgs" target="_blank" class="btn btn-outline-secondary btn-sm">ResearchGate Profile</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Past Collab: Olivier Maire (France - Bordeaux) -->
+              <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-0 p-3 d-flex flex-row align-items-center bg-light">
+                  <img src="Image/placeholder_maire.jpg" alt="Olivier Maire" class="rounded-circle mr-3 opacity-75" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #6c757d;">
+                  <div class="w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <h5 class="font-weight-bold mb-1 text-dark">Prof. Olivier Maire</h5>
+                      <span class="badge badge-secondary small">🇫🇷 France</span>
+                    </div>
+                    <p class="text-muted small mb-1">Professor in Marine Ecology</p>
+                    <p class="text-secondary small mb-2">Université de Bordeaux (UMR EPOC)</p>
+                    <a href="https://www.researchgate.net/profile/Olivier-Maire-3" target="_blank" class="btn btn-outline-secondary btn-sm">ResearchGate Profile</a>
                   </div>
                 </div>
               </div>
@@ -296,36 +351,59 @@
     
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        // Locations data across Europe
+        // Locations data across Europe and Canada (Status: 'present' or 'past')
         var locations = [
-          { name: "Université Jean Monnet (ENES Lab)", city: "Saint-Étienne, France", coords: [45.4397, 4.3872], people: "Dr. Joël Attia, Dr. Vincent Médoc, Dr. Marilyn Beauchaud" },
-          { name: "Université de Tours", city: "Tours, France", coords: [47.3941, 0.6848], people: "Dr. Loïc Prosnier" },
-          { name: "USMB & INRAE CARRTEL", city: "Thonon-les-Bains / Lake Geneva, France", coords: [46.3712, 6.4789], people: "Dr. Victor Frossard, Dr. Allan Raffard, Dr. Émilie Réalis-Doyelle" },
-          { name: "Aix-Marseille Univ (TELEMMe)", city: "Aix-en-Provence, France", coords: [43.5297, 5.4474], people: "Dr. Anne-Sophie Tribot" },
-          { name: "MARE / ARNET", city: "Lisbon, Portugal", coords: [38.7223, -9.1393], people: "Dr. Manuel Vieira, Dr. Clara Amorim" },
-          { name: "Institute of Vertebrate Biology (CAS)", city: "Brno, Czech Republic", coords: [49.1951, 16.6068], people: "Dr. Radim Blažek" },
-          { name: "NTNU", city: "Trondheim, Norway", coords: [63.4305, 10.3951], people: "Dr. Émilie Rojas" }
+          // Present Collaborators
+          { name: "Université Jean Monnet (ENES Lab)", city: "Saint-Étienne, France", coords: [45.4397, 4.3872], people: "Dr. Joël Attia, Dr. Vincent Médoc, Dr. Marilyn Beauchaud", status: "present" },
+          { name: "Université de Tours", city: "Tours, France", coords: [47.3941, 0.6848], people: "Dr. Loïc Prosnier", status: "present" },
+          { name: "USMB & INRAE CARRTEL", city: "Thonon-les-Bains, France", coords: [46.3712, 6.4789], people: "Dr. Victor Frossard, Dr. Allan Raffard, Dr. Émilie Réalis-Doyelle", status: "present" },
+          { name: "Aix-Marseille Univ (TELEMMe)", city: "Aix-en-Provence, France", coords: [43.5297, 5.4474], people: "Dr. Anne-Sophie Tribot", status: "present" },
+          { name: "MARE / ARNET", city: "Lisbon, Portugal", coords: [38.7223, -9.1393], people: "Dr. Manuel Vieira, Dr. Clara Amorim", status: "present" },
+          { name: "Institute of Vertebrate Biology (CAS)", city: "Brno, Czech Republic", coords: [49.1951, 16.6068], people: "Dr. Radim Blažek", status: "present" },
+          { name: "NTNU", city: "Trondheim, Norway", coords: [63.4305, 10.3951], people: "Dr. Émilie Rojas", status: "present" },
+          
+          // Past Collaborators
+          { name: "University of Windsor", city: "Windsor, ON, Canada", coords: [42.3043, -83.0660], people: "Prof. Dennis M. Higgs", status: "past" },
+          { name: "Université de Bordeaux (UMR EPOC)", city: "Arcachon / Bordeaux, France", coords: [44.8378, -0.5792], people: "Prof. Olivier Maire", status: "past" }
         ];
 
-        // Initialize map centered over Europe
-        var map = L.map('collaborators-map').setView([50.0, 8.0], 4);
+        // Initialize map centered over Atlantic to show both Europe and Canada
+        var map = L.map('collaborators-map').setView([48.0, -35.0], 3);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 19,
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
+        // Custom Leaflet Icons for Present vs Past
+        var blueIcon = new L.Icon({
+          iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+          shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+          iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowSize: [41, 41]
+        });
+
+        var greyIcon = new L.Icon({
+          iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-grey.png',
+          shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+          iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowSize: [41, 41]
+        });
+
         // Add markers and bounds tracking
         var bounds = [];
         locations.forEach(function(loc) {
-          var marker = L.marker(loc.coords).addTo(map)
-            .bindPopup("<b>" + loc.name + "</b><br><small>" + loc.city + "</small><br><em>Collaborators: " + loc.people + "</em>");
+          var iconChoice = loc.status === "present" ? blueIcon : greyIcon;
+          var statusBadge = loc.status === "present" 
+            ? '<span class="badge badge-primary">Current Collaborator</span>' 
+            : '<span class="badge badge-secondary">Past Collaborator</span>';
+
+          L.marker(loc.coords, { icon: iconChoice }).addTo(map)
+            .bindPopup("<b>" + loc.name + "</b> " + statusBadge + "<br><small>" + loc.city + "</small><br><em>Collaborators: " + loc.people + "</em>");
           bounds.push(loc.coords);
         });
 
-        // Fit map bounds to show all European pins neatly
+        // Fit map bounds to show all global pins neatly
         if (bounds.length > 0) {
-          map.fitBounds(bounds, { padding: [30, 30] });
+          map.fitBounds(bounds, { padding: [40, 40] });
         }
       });
     </script>
