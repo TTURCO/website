@@ -1,4 +1,3 @@
-
 /* Navbar Logo Size Reduction - INCHANGÉ */
 .nav-logo-img {
   height: 35px;
@@ -56,13 +55,53 @@ body {
   box-shadow: 0 8px 16px rgba(0,0,0,0.08) !important;
 }
 
-/* Video / Hero Media Adjustment (Agrandir la largeur et réduire la hauteur) */
-video, .hero-video, iframe {
-  width: 100% !important;
-  max-width: 100%;
-  height: 320px !important; /* Ajustez cette valeur selon vos préférences de hauteur */
-  object-fit: cover;
+/* --- CORRECTION HEADER & VIDEO --- */
+
+/* Conteneur de l'en-tête vidéo avec une hauteur contrôlée */
+.video-header {
+  position: relative;
+  width: 100%;
+  height: 380px; /* Ajustez la hauteur totale de la bannière ici */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* Vidéo en arrière-plan absolu pour ne pas repousser le texte */
+.bg-video, video, .hero-video, iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100% !important;
+  height: auto !important;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Voile sombre pour bien faire ressortir le texte par-dessus la vidéo */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 2;
+}
+
+/* Centrage et superposition du texte au premier plan */
+.header-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* --- FIN CORRECTION --- */
 
 /* Footer */
 footer {
