@@ -1,4 +1,5 @@
-/* Navbar Logo Size Reduction */
+
+/* Navbar Logo Size Reduction - INCHANGÉ */
 .nav-logo-img {
   height: 35px;
   width: auto;
@@ -53,6 +54,14 @@ body {
 .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.08) !important;
+}
+
+/* Video / Hero Media Adjustment (Agrandir la largeur et réduire la hauteur) */
+video, .hero-video, iframe {
+  width: 100% !important;
+  max-width: 100%;
+  height: 320px !important; /* Ajustez cette valeur selon vos préférences de hauteur */
+  object-fit: cover;
 }
 
 /* Footer */
