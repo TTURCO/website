@@ -1,3 +1,9 @@
+/* Navbar Logo Size Reduction */
+.nav-logo-img {
+  height: 12px; /* Adjust this value (e.g., 24px to 32px) to your preferred navbar logo size */
+  width: auto;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
