@@ -98,7 +98,7 @@
                 <!-- Collab: Vincent Médoc -->
                 <div class="col-md-6 mb-4">
                   <div class="card h-100 shadow-sm border-0 p-3 d-flex flex-row align-items-center">
-                    <img src="Image/VMedocj.jpg" alt="Vincent Médoc" class="rounded-circle mr-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #007bff;">
+                    <img src="Image/VMedoc.jpg" alt="Vincent Médoc" class="rounded-circle mr-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #007bff;">
                     <div class="w-100">
                       <h5 class="font-weight-bold mb-1">Dr. Vincent Médoc</h5>
                       <p class="text-muted small mb-1">Maître de Conférences (MCF)</p>
@@ -188,7 +188,7 @@
                 <!-- Collab: Jean Guillard -->
                 <div class="col-md-6 mb-4">
                   <div class="card h-100 shadow-sm border-0 p-3 d-flex flex-row align-items-center">
-                    <img src="Image/placeholder_guillard.jpg" alt="Jean Guillard" class="rounded-circle mr-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #6c757d;">
+                    <img src="Image/JGuillard.jpg" alt="Jean Guillard" class="rounded-circle mr-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #6c757d;">
                     <div class="w-100">
                       <h5 class="font-weight-bold mb-1">Dr. Jean Guillard</h5>
                       <p class="text-muted small mb-1">Senior Scientist in Hydroacoustics</p>
@@ -282,7 +282,7 @@
               <!-- Collab: Manuel Vieira -->
               <div class="col-md-6 mb-4">
                 <div class="card h-100 shadow-sm border-0 p-3 d-flex flex-row align-items-center">
-                  <img src="Image/placeholder_vieira.jpg" alt="Manuel Vieira" class="rounded-circle mr-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #28a745;">
+                  <img src="Image/MVieira.jpg" alt="Manuel Vieira" class="rounded-circle mr-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #28a745;">
                   <div class="w-100">
                     <h5 class="font-weight-bold mb-1">Dr. Manuel Vieira</h5>
                     <p class="text-muted small mb-1">Computational Bioacoustics & AI</p>
@@ -295,7 +295,7 @@
               <!-- Collab: Clara Amorim -->
               <div class="col-md-6 mb-4">
                 <div class="card h-100 shadow-sm border-0 p-3 d-flex flex-row align-items-center">
-                  <img src="Image/placeholder_amorim.jpg" alt="Clara Amorim" class="rounded-circle mr-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #28a745;">
+                  <img src="Image/CAmorim.jpg" alt="Clara Amorim" class="rounded-circle mr-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #28a745;">
                   <div class="w-100">
                     <h5 class="font-weight-bold mb-1">Dr. Clara Amorim</h5>
                     <p class="text-muted small mb-1">Ecophysiology & Bioacoustics</p>
@@ -468,24 +468,128 @@
     
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        // Locations data across Europe and Canada (Status: 'present' or 'past') with section target IDs
+        // Locations data with respective logo integration and section target IDs
         var locations = [
           // Present Collaborators
-          { name: "Université Jean Monnet (ENES Lab)", city: "Saint-Étienne, France", coords: [45.4397, 4.3872], people: "Dr. Joël Attia, Dr. Vincent Médoc, Dr. Marilyn Beauchaud", status: "present", targetId: "section-saint-etienne" },
-          { name: "Université de Tours", city: "Tours, France", coords: [47.3941, 0.6848], people: "Dr. Loïc Prosnier", status: "present", targetId: "section-tours" },
-          { name: "USMB & INRAE CARRTEL", city: "Thonon-les-Bains, France", coords: [46.3712, 6.4789], people: "Dr. Victor Frossard, Dr. Allan Raffard, Dr. Émilie Réalis-Doyelle, Dr. Jean Guillard, Dr. Stéphan Jacquet", status: "present", targetId: "section-thonon" },
-          { name: "Univ. Claude Bernard Lyon 1 (LEHNA)", city: "Lyon, France", coords: [45.7834, 4.8787], people: "Dr. Emilien Luquet", status: "present", targetId: "section-lyon" },
-          { name: "Aix-Marseille Univ (TELEMMe)", city: "Aix-en-Provence, France", coords: [43.5297, 5.4474], people: "Dr. Anne-Sophie Tribot", status: "present", targetId: "section-aix" },
-          { name: "Université Paris-Saclay (Neuro-PSI)", city: "Saclay, France", coords: [48.7093, 2.1675], people: "Dr. Kei Yamamoto", status: "present", targetId: "section-saclay" },
-          { name: "MARE / ARNET", city: "Lisbon, Portugal", coords: [38.7223, -9.1393], people: "Dr. Manuel Vieira, Dr. Clara Amorim", status: "present", targetId: "section-lisbon" },
-          { name: "Institute of Vertebrate Biology (CAS)", city: "Brno, Czech Republic", coords: [49.1951, 16.6068], people: "Dr. Radim Blažek", status: "present", targetId: "section-brno" },
-          { name: "NTNU", city: "Trondheim, Norway", coords: [63.4305, 10.3951], people: "Dr. Émilie Rojas", status: "present", targetId: "section-trondheim" },
+          { 
+            name: "Université Jean Monnet (ENES Lab)", 
+            city: "Saint-Étienne, France", 
+            coords: [45.4397, 4.3872], 
+            people: "Dr. Joël Attia, Dr. Vincent Médoc, Dr. Marilyn Beauchaud", 
+            status: "present", 
+            targetId: "section-saint-etienne",
+            logo: "Image/Logo_ENES.png"
+          },
+          { 
+            name: "Université de Tours", 
+            city: "Tours, France", 
+            coords: [47.3941, 0.6848], 
+            people: "Dr. Loïc Prosnier", 
+            status: "present", 
+            targetId: "section-tours",
+            logo: null
+          },
+          { 
+            name: "USMB & INRAE CARRTEL", 
+            city: "Thonon-les-Bains, France", 
+            coords: [46.3712, 6.4789], 
+            people: "Dr. Victor Frossard, Dr. Allan Raffard, Dr. Émilie Réalis-Doyelle, Dr. Jean Guillard, Dr. Stéphan Jacquet", 
+            status: "present", 
+            targetId: "section-thonon",
+            logo: null
+          },
+          { 
+            name: "Univ. Claude Bernard Lyon 1 (LEHNA)", 
+            city: "Lyon, France", 
+            coords: [45.7834, 4.8787], 
+            people: "Dr. Emilien Luquet", 
+            status: "present", 
+            targetId: "section-lyon",
+            logo: null
+          },
+          { 
+            name: "Aix-Marseille Univ (TELEMMe)", 
+            city: "Aix-en-Provence, France", 
+            coords: [43.5297, 5.4474], 
+            people: "Dr. Anne-Sophie Tribot", 
+            status: "present", 
+            targetId: "section-aix",
+            logo: null
+          },
+          { 
+            name: "Université Paris-Saclay (Neuro-PSI)", 
+            city: "Saclay, France", 
+            coords: [48.7093, 2.1675], 
+            people: "Dr. Kei Yamamoto", 
+            status: "present", 
+            targetId: "section-saclay",
+            logo: null
+          },
+          { 
+            name: "MARE / ARNET", 
+            city: "Lisbon, Portugal", 
+            coords: [38.7223, -9.1393], 
+            people: "Dr. Manuel Vieira, Dr. Clara Amorim", 
+            status: "present", 
+            targetId: "section-lisbon",
+            logo: "Image/MARE LOGO.png"
+          },
+          { 
+            name: "Institute of Vertebrate Biology (CAS)", 
+            city: "Brno, Czech Republic", 
+            coords: [49.1951, 16.6068], 
+            people: "Dr. Radim Blažek", 
+            status: "present", 
+            targetId: "section-brno",
+            logo: null
+          },
+          { 
+            name: "NTNU", 
+            city: "Trondheim, Norway", 
+            coords: [63.4305, 10.3951], 
+            people: "Dr. Émilie Rojas", 
+            status: "present", 
+            targetId: "section-trondheim",
+            logo: null
+          },
           
           // Past Collaborators
-          { name: "University of Windsor", city: "Windsor, ON, Canada", coords: [42.3043, -83.0660], people: "Prof. Dennis M. Higgs", status: "past", targetId: "section-windsor" },
-          { name: "Université de Bordeaux (UMR EPOC)", city: "Arcachon / Bordeaux, France", coords: [44.8378, -0.5792], people: "Prof. Olivier Maire", status: "past", targetId: "section-bordeaux" },
-          { name: "University of Liège", city: "Liège, Belgium", coords: [50.6326, 5.5697], people: "Prof. Eric Parmentier", status: "past", targetId: "section-liege" },
-          { name: "Université de Montpellier (MARBEC)", city: "Montpellier, France", coords: [43.6108, 3.8767], people: "Dr. Frédéric Bertucci", status: "past", targetId: "section-montpellier" }
+          { 
+            name: "University of Windsor", 
+            city: "Windsor, ON, Canada", 
+            coords: [42.3043, -83.0660], 
+            people: "Prof. Dennis M. Higgs", 
+            status: "past", 
+            targetId: "section-windsor",
+            logo: null
+          },
+          { 
+            name: "Université de Bordeaux (UMR EPOC)", 
+            city: "Arcachon / Bordeaux, France", 
+            coords: [44.8378, -0.5792], 
+            people: "Prof. Olivier Maire", 
+            status: "past", 
+            targetId: "section-bordeaux",
+            logo: null
+          },
+          { 
+            name: "University of Liège", 
+            city: "Liège, Belgium", 
+            coords: [50.6326, 5.5697], 
+            people: "Prof. Eric Parmentier", 
+            status: "past", 
+            targetId: "section-liege",
+            logo: null
+          },
+          { 
+            name: "Université de Montpellier (MARBEC)", 
+            city: "Montpellier, France", 
+            coords: [43.6108, 3.8767], 
+            people: "Dr. Frédéric Bertucci", 
+            status: "past", 
+            targetId: "section-montpellier",
+            logo: null
+          }
         ];
 
         // Initialize map centered over Atlantic to show both Europe and Canada
@@ -517,12 +621,16 @@
             ? '<span class="badge badge-primary">Current Collaborator</span>' 
             : '<span class="badge badge-secondary">Past Collaborator</span>';
 
-          var popupContent = "<b>" + loc.name + "</b> " + statusBadge + 
+          // Include logo in popup if available
+          var logoHtml = loc.logo ? '<div class="mb-2"><img src="' + loc.logo + '" alt="Logo" style="max-height: 40px; display: block;"></div>' : '';
+
+          var popupContent = logoHtml +
+                             "<b>" + loc.name + "</b> " + statusBadge + 
                              "<br><small>" + loc.city + "</small>" +
                              "<br><em>Collaborators: " + loc.people + "</em>" +
                              "<br><a href='#' class='map-scroll-link' data-target='" + loc.targetId + "'>👉 Jump to section</a>";
 
-          var marker = L.marker(loc.coords, { icon: iconChoice }).addTo(map)
+          L.marker(loc.coords, { icon: iconChoice }).addTo(map)
             .bindPopup(popupContent);
 
           bounds.push(loc.coords);
