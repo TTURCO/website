@@ -10,8 +10,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/style3.css">
     <link rel="shortcut icon" href="Image/gobie_draw.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Publications & Communications - Théophile Turco</title>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+      }
+      .pub-card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border-left: 4px solid #007bff !important;
+        background: #fff;
+      }
+      .pub-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+      }
+      .badge-keyword {
+        font-size: 75%;
+        font-weight: 500;
+        padding: 0.35em 0.65em;
+        background-color: #e9ecef;
+        color: #495057;
+        border-radius: 4px;
+      }
+      .axis-card {
+        border: none;
+        border-radius: 8px;
+        transition: all 0.2s ease-in-out;
+      }
+      .axis-card:hover {
+        background-color: #f1f4f8 !important;
+      }
+    </style>
   </head>
   <body>
 
@@ -19,7 +50,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand font-weight-bold d-flex align-items-center" href="index.html">
-          <img src="Image/gobie_draw.png" alt="Logo" class="nav-logo-img mr-2"> Home
+          <img src="Image/gobie_draw.png" alt="Logo" class="nav-logo-img mr-2" style="height: 30px;"> Home
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -27,7 +58,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link text-primary" href="publications.html">Publications-Communications</a>
+              <a class="nav-link text-primary font-weight-bold" href="publications.html">Publications-Communications</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="collaborators.html">Collaborators and Interns</a>
@@ -44,10 +75,52 @@
     <section class="container my-5 pt-5">
       <div class="row justify-content-center">
         <div class="col-lg-10">
-          <h2 class="section-title text-center mb-4">Research (Publications & Communications)</h2>
+          
+          <h2 class="section-title text-center mb-3 font-weight-bold">Research & Publications</h2>
           <p class="lead text-muted text-center mb-5">
-            Explore peer-reviewed articles, preprints, and ongoing works in bioacoustics, behavioral ecology, and aquatic ecosystem management.
+            Explore peer-reviewed articles, preprints, and ongoing works organized across core research axes in bioacoustics, behavioral ecology, and aquatic ecosystem management.
           </p>
+
+          <!-- RESEARCH AXES OVERVIEW GRID (Inspired by Timeline Career Chart) -->
+          <div class="card shadow-sm border-0 mb-5 p-4 bg-white">
+            <h4 class="font-weight-bold text-dark mb-3"><i class="fas id-card text-primary mr-2"></i><i class="fas fa-project-diagram text-primary mr-2"></i>Overview of Research Axes</h4>
+            <p class="text-muted small mb-4">Click any research axis below to jump directly to its corresponding publications and works.</p>
+            
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <a href="#axis-freshwater" class="text-decoration-none">
+                  <div class="p-3 bg-light axis-card h-100 border-left border-primary" style="border-left-width: 4px !important;">
+                    <h6 class="font-weight-bold text-dark mb-1"><i class="fas fa-water text-primary mr-2"></i>Freshwater Management & Monitoring</h6>
+                    <p class="text-muted small mb-0">Passive acoustic tracking vs. aerial monitoring, soundscape synthesis, and anthropogenic lake assessments.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mb-3">
+                <a href="#axis-invasive" class="text-decoration-none">
+                  <div class="p-3 bg-light axis-card h-100 border-left border-success" style="border-left-width: 4px !important;">
+                    <h6 class="font-weight-bold text-dark mb-1"><i class="fas fa-shield-alt text-success mr-2"></i>Invasive Species & Bioacoustic Trapping</h6>
+                    <p class="text-muted small mb-0">Acoustic playback for goby trapping and motorboat noise impacts on quagga mussels and killer shrimp.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mb-3">
+                <a href="#axis-behavior" class="text-decoration-none">
+                  <div class="p-3 bg-light axis-card h-100 border-left border-info" style="border-left-width: 4px !important;">
+                    <h6 class="font-weight-bold text-dark mb-1"><i class="fas fa-fish text-info mr-2"></i>Behavior, Physiology & Communication</h6>
+                    <p class="text-muted small mb-0">Multimodal communication in cichlids, chronic boat noise effects on growth/behavior, and coral reef trophic links.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mb-3">
+                <a href="#axis-submitted" class="text-decoration-none">
+                  <div class="p-3 bg-light axis-card h-100 border-left border-warning" style="border-left-width: 4px !important;">
+                    <h6 class="font-weight-bold text-dark mb-1"><i class="fas fa-paper-plane text-warning mr-2"></i>Submitted, Preprints & In Prep</h6>
+                    <p class="text-muted small mb-0">Public aquaria visitor effects, human vocalisation databases (ECHO Corpus), and ongoing physiological studies.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
 
           <!-- GOOGLE SCHOLAR METRICS CARD -->
           <div class="card shadow-sm border-0 mb-5 p-4 bg-light">
@@ -78,44 +151,134 @@
             </div>
           </div>
 
-          <!-- Multimodal communication in fish -->
-          <h3 class="h4 font-weight-bold text-secondary mb-3">Multimodal communication in fish</h3>
-          <ol class="mb-4">
-            <li class="mb-2">Turco T, Cizeron R, Moreli Fantacini F, Martin-Jarrand S, Passelegue M, Pradeau A, Boyer N, Hassnaoui M, Attia J, Resilience to the daily light cycle of multimodal communication in the Malawian cichlid fish <em>Maylandia zebra</em> (2026), Cybium (Journal of the French Society of Ichthyology - IF=0.9)</li>
-          </ol>
+          <!-- AXIS 1: FRESHWATER MANAGEMENT & MONITORING -->
+          <div id="axis-freshwater" class="mb-5 pt-3">
+            <h3 class="h4 font-weight-bold text-dark mb-3 pb-2 border-bottom"><i class="fas fa-water text-primary mr-2"></i>Axis: Freshwater Management & Monitoring</h3>
+            
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3">
+              <p class="mb-2">Turco T, Vieira M, Beauchaud M, Jacquet S, Guillard J, Médoc V (2025), From sky to underwater: Can passive acoustic monitoring substitute to aerial tracking to quantify human use of inland waters?, <strong>Journal of Environmental Management</strong> (IF: 8.0), <a href="https://doi.org/10.1016/j.jenvman.2025.127571" target="_blank">doi: 10.1016/j.jenvman.2025.127571</a></p>
+              <div>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Monitoring</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Freshwater Management</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Bioacoustics</span>
+              </div>
+            </div>
 
-          <!-- Effect of noise on aquatic fauna -->
-          <h3 class="h4 font-weight-bold text-secondary mb-3">Effect of noise on aquatic fauna</h3>
-          <ol class="mb-4">
-            <li class="mb-2">Turco T, Vieira M, Beauchaud M, Jacquet S, Guillard J, Médoc V (2025), From sky to underwater: Can passive acoustic monitoring substitute to aerial tracking to quantify human use of inland waters?, Journal of Environmental Management (IF: 8.0), <a href="https://doi.org/10.1016/j.jenvman.2025.127571" target="_blank">doi: 10.1016/j.jenvman.2025.127571</a></li>
-            <li class="mb-2">Turco T, Voirin L, Attia J, Beninati V, Higgs M D, Cagnant M, Médoc V (2025), Acoustic playback is better than food to trap one of the worst invasive fishes, Journal of Environmental Management (IF: 8.0), <a href="https://doi.org/10.1016/j.jenvman.2024.123555" target="_blank">doi: 10.1016/j.jenvman.2024.123555</a></li>
-            <li class="mb-2">Turco T, Casole P, Saint-Marcoux D, Romero-Ramirez A, Beauchaud M, Guillard J, Maire O, Médoc V (2025), Motorboat noise increases aggregation and alters gaping and filtration behaviors in the invasive quagga mussel, Biological Invasions (IF: 2.8), <a href="https://doi.org/10.1007/s10530-024-03475-3" target="_blank">doi: 10.1007/s10530-024-03475-3</a></li>
-            <li class="mb-2">Wang W, Turco T, Pradeau A, Fonseca J. P, Vasconcelos O. R, Amorim P. CM, Coureaud G, Beauchaud M, Dynamic Effect of chronic boat noise on growth and behaviour in early life stages of the african cichlid <em>Maylandia zebra</em> (2025), Freshwater Biology (IF: 2.8), <a href="https://doi.org/10.1111/fwb.70077" target="_blank">doi: 10.1111/fwb.70077</a></li>
-            <li class="mb-2">Minier L, Eychenne T, Portrat J, Turco T, Bertucci F, Sowinski J, Sturny V, Medoc V, Lecchini D, Motorboat noise playback reduces herbivory by coral reef fish (2026), Environmental Biology of Fishes (IF: 1.4), <a href="https://doi.org/10.1007/s10641-025-01798-1" target="_blank">doi: 10.1007/s10641-025-01798-1</a></li>
-            <li class="mb-2">Minier L, Bertucci F, Gay T, Chamot T, Turco T, Schligler J, Mills C.S, Vidal M, Parmentier E, Sturny V, Mathevon N, Beauchaud M, Lecchini D, Médoc V (2024), Behavioural Response to Boat Noise Weakens the Strength of a Trophic Link in Coral Reefs, Environmental pollution (IF: 7.6), <a href="https://doi.org/10.1016/j.envpol.2024.124770" target="_blank">doi: 10.1016/j.envpol.2024.124770</a></li>
-          </ol>
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3">
+              <p class="mb-2">Darras FA K, [WWSS consortium (~ 250 researchers including Turco T)], Cherico Wanger T (2025), Worldwide Soundscapes: a synthesis of passive acoustic monitoring across realms, <strong>Global Ecology and Biogeography</strong> (IF: 6.3), <a href="https://doi.org/10.1111/geb.70021" target="_blank">doi: 10.1111/geb.70021</a></p>
+              <div>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Soundscape Monitoring</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Global Synthesis</span>
+              </div>
+            </div>
+          </div>
 
-          <!-- Soundscape monitoring -->
-          <h3 class="h4 font-weight-bold text-secondary mb-3">Soundscape monitoring</h3>
-          <ol class="mb-4">
-            <li class="mb-2">Darras FA K, [WWSS consortium (~ 250 researchers including Turco T)], Cherico Wanger T (2025), Worldwide Soundscapes: a synthesis of passive acoustic monitoring across realms, Global Ecology and Biogeography (IF: 6.3), <a href="https://doi.org/10.1111/geb.70021" target="_blank">doi: 10.1111/geb.70021</a></li>
-          </ol>
+          <!-- AXIS 2: INVASIVE SPECIES & BIOACOUSTIC TRAPPING -->
+          <div id="axis-invasive" class="mb-5 pt-3">
+            <h3 class="h4 font-weight-bold text-dark mb-3 pb-2 border-bottom"><i class="fas fa-shield-alt text-success mr-2"></i>Axis: Invasive Species & Bioacoustic Trapping</h3>
+            
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #28a745 !important;">
+              <p class="mb-2">Turco T, Voirin L, Attia J, Beninati V, Higgs M D, Cagnant M, Médoc V (2025), Acoustic playback is better than food to trap one of the worst invasive fishes, <strong>Journal of Environmental Management</strong> (IF: 8.0), <a href="https://doi.org/10.1016/j.jenvman.2024.123555" target="_blank">doi: 10.1016/j.jenvman.2024.123555</a></p>
+              <div>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Goby Trapping</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Invasive Species</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Bioacoustics</span>
+              </div>
+            </div>
 
-          <!-- Submitted -->
-          <h3 class="h4 font-weight-bold text-secondary mb-3">Submitted</h3>
-          <ol class="mb-4">
-            <li class="mb-2">García Arasco A, Turco T, Isa U, Koda H, Tokuda I, Reby D, Pisanski K, ECHO Corpus: Cross-cultural database of 15000 nonverbal vocalisations from speakers of 22 languages (under review)</li>
-            <li class="mb-2">Vincent L, Turco T, Mourin J, Attia J, Tribot AS, Beyond the glass: testing visitor effects on the behavior of teleost fish in public aquaria (submitted to <em>Animal Behaviour</em>) — <em>Preprint available on bioRxiv: <a href="https://doi.org/10.64898/2026.09.17.752300" target="_blank">https://doi.org/10.64898/2026.09.17.752300</a></em></li>
-          </ol>
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #28a745 !important;">
+              <p class="mb-2">Turco T, Casole P, Saint-Marcoux D, Romero-Ramirez A, Beauchaud M, Guillard J, Maire O, Médoc V (2025), Motorboat noise increases aggregation and alters gaping and filtration behaviors in the invasive quagga mussel, <strong>Biological Invasions</strong> (IF: 2.8), <a href="https://doi.org/10.1007/s10530-024-03475-3" target="_blank">doi: 10.1007/s10530-024-03475-3</a></p>
+              <div>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Invertebrate</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Quagga Mussel</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Behavior</span>
+              </div>
+            </div>
+          </div>
 
-          <!-- In prep -->
-          <h3 class="h4 font-weight-bold text-secondary mb-3">In prep</h3>
-          <ol class="mb-4">
-            <li class="mb-2">Turco T, Vieira M, Beauchaud M, Jacquet S, Guillard J, Médoc V, Underwater noise assessments of a highly anthropized freshwater lake (submitted soon)</li>
-            <li class="mb-2">Milová T, [….], Turco T, Blazek R, What drives reproductive isolation in sympatric killifishes? Innate behavioural filters, age-dependent selectivity, and asymmetric hybrid viability (in prep)</li>
-            <li class="mb-2">Turco T, Peyrard B, Gravier A, Moulin M, Perbet M, Boughalmi K, Médoc V, Prosnier L, Boat noise reduces growth but does not affect behavior of the freshwater snail <em>Physella acuta</em> (in prep.)</li>
-            <li class="mb-2">Chapman-Dunn T, Attia J, Realis E, Collodi M, Médoc V, Turco T, Impact of anthropogenic noise on the invasive ‘killer-shrimp’, <em>Dikergammarus villosus</em> from physiology to ecological performance (in prep.)</li>
-          </ol>
+          <!-- AXIS 3: BEHAVIOR, PHYSIOLOGY & MULTIMODAL COMMUNICATION -->
+          <div id="axis-behavior" class="mb-5 pt-3">
+            <h3 class="h4 font-weight-bold text-dark mb-3 pb-2 border-bottom"><i class="fas fa-fish text-info mr-2"></i>Axis: Behavior, Physiology & Multimodal Communication</h3>
+            
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #17a2b8 !important;">
+              <p class="mb-2">Turco T, Cizeron R, Moreli Fantacini F, Martin-Jarrand S, Passelegue M, Pradeau A, Boyer N, Hassnaoui M, Attia J, Resilience to the daily light cycle of multimodal communication in the Malawian cichlid fish <em>Maylandia zebra</em> (2026), <strong>Cybium</strong> (Journal of the French Society of Ichthyology - IF=0.9)</p>
+              <div>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Multimodal Communication</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Cichlid</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Behavior</span>
+              </div>
+            </div>
+
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #17a2b8 !important;">
+              <p class="mb-2">Wang W, Turco T, Pradeau A, Fonseca J. P, Vasconcelos O. R, Amorim P. CM, Coureaud G, Beauchaud M, Dynamic Effect of chronic boat noise on growth and behaviour in early life stages of the african cichlid <em>Maylandia zebra</em> (2025), <strong>Freshwater Biology</strong> (IF: 2.8), <a href="https://doi.org/10.1111/fwb.70077" target="_blank">doi: 10.1111/fwb.70077</a></p>
+              <div>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Cichlid</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Noise Impact</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Growth & Behavior</span>
+              </div>
+            </div>
+
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #17a2b8 !important;">
+              <p class="mb-2">Minier L, Eychenne T, Portrat J, Turco T, Bertucci F, Sowinski J, Sturny V, Medoc V, Lecchini D, Motorboat noise playback reduces herbivory by coral reef fish (2026), <strong>Environmental Biology of Fishes</strong> (IF: 1.4), <a href="https://doi.org/10.1007/s10641-025-01798-1" target="_blank">doi: 10.1007/s10641-025-01798-1</a></p>
+              <div>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Coral Reefs</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Herbivory</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Behavior</span>
+              </div>
+            </div>
+
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #17a2b8 !important;">
+              <p class="mb-2">Minier L, Bertucci F, Gay T, Chamot T, Turco T, Schligler J, Mills C.S, Vidal M, Parmentier E, Sturny V, Mathevon N, Beauchaud M, Lecchini D, Médoc V (2024), Behavioural Response to Boat Noise Weakens the Strength of a Trophic Link in Coral Reefs, <strong>Environmental Pollution</strong> (IF: 7.6), <a href="https://doi.org/10.1016/j.envpol.2024.124770" target="_blank">doi: 10.1016/j.envpol.2024.124770</a></p>
+              <div>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Coral Reefs</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Trophic Link</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Behavior</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AXIS 4: SUBMITTED, PREPRINTS & IN PREPARATION -->
+          <div id="axis-submitted" class="mb-5 pt-3">
+            <h3 class="h4 font-weight-bold text-dark mb-3 pb-2 border-bottom"><i class="fas fa-paper-plane text-warning mr-2"></i>Submitted, Preprints & In Preparation</h3>
+            
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #ffc107 !important;">
+              <p class="mb-2">García Arasco A, Turco T, Isa U, Koda H, Tokuda I, Reby D, Pisanski K, ECHO Corpus: Cross-cultural database of 15000 nonverbal vocalisations from speakers of 22 languages (under review)</p>
+              <div>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Vocalisations</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Database</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Under Review</span>
+              </div>
+            </div>
+
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #ffc107 !important;">
+              <p class="mb-2">Vincent L, Turco T, Mourin J, Attia J, Tribot AS, Beyond the glass: testing visitor effects on the behavior of teleost fish in public aquaria (submitted to <em>Animal Behaviour</em>) — <em>Preprint available on bioRxiv: <a href="https://doi.org/10.64898/2026.09.17.752300" target="_blank">https://doi.org/10.64898/2026.09.17.752300</a></em></p>
+              <div>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Public Aquaria</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Behavior</span>
+                <span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Preprint</span>
+              </div>
+            </div>
+
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #6c757d !important;">
+              <p class="mb-2">Turco T, Vieira M, Beauchaud M, Jacquet S, Guillard J, Médoc V, Underwater noise assessments of a highly anthropized freshwater lake (submitted soon)</p>
+              <div><span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Freshwater</span><span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Noise Assessment</span></div>
+            </div>
+
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #6c757d !important;">
+              <p class="mb-2">Milová T, [….], Turco T, Blazek R, What drives reproductive isolation in sympatric killifishes? Innate behavioural filters, age-dependent selectivity, and asymmetric hybrid viability (in prep)</p>
+              <div><span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Killifish</span><span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Reproductive Isolation</span></div>
+            </div>
+
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #6c757d !important;">
+              <p class="mb-2">Turco T, Peyrard B, Gravier A, Moulin M, Perbet M, Boughalmi K, Médoc V, Prosnier L, Boat noise reduces growth but does not affect behavior of the freshwater snail <em>Physella acuta</em> (in prep.)</p>
+              <div><span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Invertebrate</span><span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Freshwater Snail</span><span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Growth & Behavior</span></div>
+            </div>
+
+            <div class="card pub-card shadow-sm border-0 mb-3 p-3" style="border-left-color: #6c757d !important;">
+              <p class="mb-2">Chapman-Dunn T, Attia J, Realis E, Collodi M, Médoc V, Turco T, Impact of anthropogenic noise on the invasive ‘killer-shrimp’, <em>Dikergammarus villosus</em> from physiology to ecological performance (in prep.)</p>
+              <div><span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Invertebrate</span><span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Killer Shrimp</span><span class="badge badge-keyword mr-1"><i class="fas fa-tag mr-1"></i>Physiology</span></div>
+            </div>
+          </div>
 
         </div>
       </div>
